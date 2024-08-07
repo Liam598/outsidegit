@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
-
+if [ -d "./tempdir" ]; then  
+    rm -r tempdir  
+fi  
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
